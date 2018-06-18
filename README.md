@@ -11,5 +11,8 @@
 
 ## Will try to keep this versions as updated as possible
 
-## To run it in local - npm start
-## To create a production build - npm run build (dist folder will be created; deploy that it in the web server)
+## To run it in local
+### npm start
+
+## To create a production build 
+### npm run build (dist folder will be created; deploy that folder in the web server)
