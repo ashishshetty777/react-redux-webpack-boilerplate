@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
+import { BrowserRouter, Switch, Route, Redirect, Link } from 'react-router-dom';
+import MyComponent from '../my_component/my_component';
+import OtherComponent from '../other_component/other_component';
 import './app.scss';
 
 
@@ -11,7 +14,12 @@ class App extends React.Component {
 
 	render(){		
 		return (
-			<h1> This is my app! </h1>
+			<BrowserRouter>
+				<Switch>
+					<Route exact path='/othercomp' component={OtherComponent} />
+					<Route exact path='/' component={MyComponent} />
+				</Switch>
+			</BrowserRouter>
 			);
 	}
 }
